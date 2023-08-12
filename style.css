@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+  .heart {
+    display: none;
+  }
+}
+
+.heart {
+  width: 10vmin;
+  height: 10vmin;
+  background-color: #ff1493;
+  position: relative;
+  transform: rotate(-45deg);
+  margin-top: -350px;
+  margin-left: -80px;
+}
+
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  width: 10vmin;
+  height: 10vmin;
+  background-color: #ff1493;
+  border-radius: 50%;
+}
+
+.heart::before {
+  top: -5vmin;
+  left: 0;
+}
+
+.heart::after {
+  top: 0;
+  left: 5vmin;
+}
+
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+.heart {
+  animation: heartbeat 1s infinite;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+#hasil {
+  margin-top: -10px;
+  font-size: 18px;
+  font-weight: bold;
+}
