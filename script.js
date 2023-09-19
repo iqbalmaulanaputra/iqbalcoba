@@ -1,7 +1,7 @@
 flag = 1
         function f1() {
             alert("Love you <3")
-            location.replace("https://wa.me/?text=Halo%20Sayang%20Aku%20Mau%20Jadi%20Pacar%20Kamu%20Kok%20");
+            location.replace("https://wa.me/625?text=Halo%20Sayang%20Aku%20Mau%20Jadi%20Pacar%20Kamu%20Kok%20");
         }
         function f() {
             if (flag == 1) {
