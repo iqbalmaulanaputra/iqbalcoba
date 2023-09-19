@@ -1,12 +1,24 @@
 body {
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 }
+
+.card {
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+}
+
+
 
 @media (max-width: 768px) {
   .card {
@@ -23,8 +35,8 @@ body {
   background-color: #ff1493;
   position: relative;
   transform: rotate(-45deg);
-  margin-top: -350px;
-  margin-left: -80px;
+  margin-top: -450px;
+  margin-left: -90px;
 }
 
 .heart::before,
@@ -62,16 +74,21 @@ body {
 
 label {
   font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
 }
 
-input {
-  padding: 5px;
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 3px;
 }
 
-#hasil {
-  margin-top: -10px;
-  font-size: 18px;
-  font-weight: bold;
+.btn {
+  width: 45%;
+  margin: 40px;
 }
+
+
